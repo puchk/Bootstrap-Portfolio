@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+	body {
+			background: url("assets/images/background.png");
+			font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+			color: #777777;
+			overflow: auto;
+		}
+	h1,
+	h2,
+	h3 {
+	  font-family: 'Georgia', Times, Times New Roman, serif;
+	  color: #4aaaa5;
+	  font-weight: 700;
+	  font-size: 30px;
+	  margin: 0;
+	}
+	p {
+		line-height: 2;
+	}	
+	.removePadding {
+		padding:0;
+	}
+	.header {
+		border-bottom: 2px  solid #cccccc;
+		background: #ffffff;
+		margin-bottom: 40px;
+	}
+	.headerTitle {
+		height: 90px;
+		font-family: 'Georgia', Times, Times New Roman, serif;
+		text-align: center;
+		line-height: 90px;
+		color: #fff;
+		font-weight: 700;
+		font-size: 30px;
+		text-decoration: none;
+		background: #4aaaa5;
+	}
+	.nav {
+		background: #ffffff;
+		text-align: center;
+	}
+	.link {
+		height: 65px;
+		text-align: center;
+		line-height: 80px;
+		vertical-align: middle;
+		padding: 0 10px;
+	}
+	.link:link {
+		color: #777777;
+		text-decoration: none;
+	}
+	.link:visited {
+		color: #777777;
+	}
+	.article {
+		padding: 30px;
+		background: #ffffff;
+		margin-bottom: 40px;
+			}
+  	#selfie {
+  		width: 100%;
+  		height: auto;
+  		padding-top: 30px;
+  	}
+  	.myText {
+  		padding-top: 5px;
+  	}
+  	.icon {
+  		width: 62px;
+  		height: auto;
+  	}
+	.aside {
+		background: white;
+		text-align: center;
+		padding: 40px 15px 20px 15px;
+		margin-bottom: 40px;
+		height: 200px;
+	}
+  	.asideTitle{
+		font-size: 22px;
+  	}
+  	.footer {
+  		color: #ccc;
+  		background: #666;
+  		border-top: 8px solid #4aaaa5;
+  		font-size: 12px;
+  		padding: 30px 0;
+  		text-align: center;
+  	}
+	.carousel-caption {
+		font-size: 22px;
+		background-color: #4aaaa5;
+		color: white;
+		width: 100%;
+		left: 0;
+	}
+	.img-responsive {
+		width: 100%;
+		margin-bottom: 40px; 
+	}
+	@media screen and (max-width: 980px) {
+		.aside {
+			text-align: left;
+		}
+	}
+  </style>
+</head>
+<body>
+	<header class="row header">
+	<div class="container removePadding">
+		<div class="col-sm-5 headerTitle">Kevin Puchalski</div>
+		<div class="col-sm-3"></div>
+		<nav class="col-sm-4 nav">
+			<a href="index.html" class="link">About</a>
+			|
+			<a href="#" class="link">Portfolio</a>
+			|
+			<a href="contact.html" class="link">Contact</a>
+		</nav>
+		</div>
+	</header>
+	
+	<div class="container">
+	<div class="row">
+		<article class="col-md-7 article">
+			<h1>Portfolio</h1>
+			<hr>
+			<div class="row">
+				<section id="myCarousel" class="carousel slide col-sm-6 col-md-12 col-lg-6" data-ride="carousel">
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="assets/images/snakeGame.jpg" alt="" class="img-responsive">
+				           <div class="carousel-caption">
+				           Snake Game
+				           </div>
+				        </div>
+				    </div>
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="assets/images/rpgGame.png" alt="" class="img-responsive">
+				           <div class="carousel-caption">
+				           RPG Game
+				           </div>
+				        </div>
+			        </div>
+			        <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="assets/images/triviagame.jpg" alt="" class="img-responsive">
+				           <div class="carousel-caption">
+				           Trivia Game
+				           </div>
+				        </div>
+				    </div>
+				    </section>
+			    <section id="myCarousel" class="carousel slide col-sm-6 col-md-12 col-lg-6" data-ride="carousel">
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="assets/images/informationWidget.jpg" alt="" class="img-responsive">
+				           <div class="carousel-caption">
+				           Information Widget
+				           </div>
+				        </div>
+				    </div>
+				    <div class="carousel-inner">
+				        <div class="item active">
+				        <img src="assets/images/tetris.jpg" alt="" class="img-responsive">
+				           <div class="carousel-caption">
+				           Tetris
+				           </div>
+				        </div>
+				    </div>
+			    </section>
+		    </div>
+		</article>
+
+
+		<div class="col-md-1"></div>
+			<aside class="col-md-3 aside">
+			<div>
+				<h1 class="asideTitle">Connect with Me</h1>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-xs-12">
+					<a href="https://github.com/puchk" target="_blank"><img src="assets/images/gitHubIcon.png" alt="GitHub Icon" class="icon"></a>
+			
+					<a href="https://www.linkedin.com/in/kevin-puchalski-75982159/"	target="_blank" id="linkedInIcon"><img src="assets/images/linkedInIcon.png" alt="linkedIn Icon" class="icon"></a>
+		
+					<a href="http://stackoverflow.com/users/7353316/puchk" target="_blank"><img src="assets/images/stackOverflowIcon.png" alt="StackOverflow icon" class="icon"></a>
+				</div>
+			
+			</div>
+			</aside>
+	</div>
+	</div>	
+	<footer class="row footer">
+		<p>&#xA9; Copywright 2017 Kevin Puchalski</p>
+	</footer>
+</body>
+</html>
+
